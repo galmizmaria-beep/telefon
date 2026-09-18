@@ -1,0 +1,2 @@
+const fs=require('node:fs');require('../src/model.js');require('../src/archive.js');require('../src/export-sources.js');
+(async()=>{const p=PhoneModel.demo();fs.mkdirSync('examples',{recursive:true});fs.writeFileSync('examples/demo.phonegame',Buffer.from(await PhoneArchive.save(p).arrayBuffer()));fs.writeFileSync('examples/game.html',PhoneArchive.html(p,PhoneExportSources));fs.writeFileSync('examples/game.light.html',PhoneArchive.html(p,PhoneExportSources,true));console.log('Created demo.phonegame, game.html, game.light.html');})();

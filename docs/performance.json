@@ -1,0 +1,13 @@
+{
+  "heroes": 30,
+  "tasks": 300,
+  "mediaMiB": 19.875168800354004,
+  "updates": 600,
+  "p95": 15.300000011920929,
+  "max": 17,
+  "longTasks": 0,
+  "maxLongTask": 0,
+  "preserved": true,
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.0.0 Safari/537.36",
+  "cores": 10
+}

@@ -1,0 +1,2 @@
+importScripts('model.js','archive.js');
+onmessage=async ({data})=>{try {let result;if(data.kind==='save')result=PhoneArchive.save(data.project);if(data.kind==='load')result=await PhoneArchive.load(data.buffer);if(data.kind==='html')result=new Blob([PhoneArchive.html(data.project,data.sources,data.compact)],{type:'text/html;charset=utf-8'});postMessage({result});}catch(e){postMessage({error:e.message});}};
