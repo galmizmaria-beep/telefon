@@ -25,8 +25,8 @@ jobs:
       - name: Stage public files
         run: |
           mkdir -p _site
-          cp index.html _site/
-          cp -R src assets docs examples _site/
+          cp index.html player.html _site/
+          cp -R src assets vendor docs examples _site/
       - uses: actions/upload-pages-artifact@v4
         with:
           path: _site
